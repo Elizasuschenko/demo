@@ -1,0 +1,295 @@
+*
+  box-sizing: border-box
+body
+  margin: 0
+  padding: 0
+  display: flex
+
+aside
+  background: radial-gradient(1613.51px at 50% 0%, #3C52C9 0%, #6B7DEA 100%)
+  min-height: 100vh
+  box-shadow: inset -3px 0px 6px rgba(0, 0, 0, 0.0953635)
+  width: 17%
+
+
+.aside-header
+  width: 100%
+  height: 58px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  span
+    color: white
+    &:first-of-type
+      font-family: Source Sans Pro
+      font-style: normal
+      font-weight:  700
+      font-size: 19px
+      line-height: normal
+      text-transform: uppercase
+    &:last-of-type
+      font-family: Source Sans Pro
+      font-style: normal
+      font-weight: 300
+      font-size: 8px
+      padding-top: 8px
+      padding-left: 10px
+      text-align: justify
+      text-transform: lowercase
+
+
+.logo
+  background-image: url(../img/Logo.svg)
+  width: 36px
+  height: 32px
+  margin-right: 10px
+  margin-left: 30px
+
+
+.aside-items
+  padding: 24px 17px 25px 28px
+  ul
+    margin: 0
+    padding: 0
+    li.focus-item
+      color: white
+      padding: 5px  25px
+      background: #2438AB
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.110479)
+      border-radius: 4px
+      margin-bottom: 10px
+    ul.focus-list
+      li
+        padding-left: 34px
+        margin-bottom: 15px
+        font-size: 13px
+        color: white
+        width: 100%
+        max-width: 174px
+    li
+      padding-left: 18px
+      margin-bottom: 20px
+      list-style: none
+      width: 100%
+      max-width: 174px
+      color: rgba(255, 255, 255, 0.695029)
+      font-family: Source Sans Pro
+      font-style: normal
+      font-weight:  700
+      font-size: 15px
+      line-height: 15px
+      text-align: justify
+
+      
+#main
+  min-height: 100vh
+  width: 83%
+  background-color: #F2F2F2
+  .main-header
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0465919)
+    height: 58px
+    background-color: white
+    position: relative
+    h1
+      font-family: Source Sans Pro 
+      font-style: normal 
+      font-weight:  700 
+      font-size: 16px 
+      line-height: normal 
+      text-align: center 
+      text-transform: uppercase 
+      color: #6B7DEA
+      margin: 0
+      line-height: 58px
+    button
+      position: absolute
+      left: 12px
+      top: 0
+      bottom: 0
+      margin: auto
+      background-color: white
+      height: 27px
+      width: 68px
+      border: 1px solid #3C52C9
+      box-sizing: border-box
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.110479)
+      border-radius: 3px
+      font-family: Source Sans Pro 
+      font-style: normal
+      font-weight:  700
+      font-size: 12.6px
+      line-height: 13px
+      letter-spacing: 0.1176px
+      color: #3C52C9
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        display: inline-block
+        margin-right: 5px
+  .main-services
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 32px 19px 25px 20px
+    .main-search
+      display: flex
+      align-items: center
+      position: relative
+      .search
+        position: relative
+        margin-right: 20px
+        input
+          &[type="text"]
+            width: 277px
+            height: 44px
+            line-height: 44px
+            background: #FFFFFF
+            border: 0.5px solid rgba(0, 0, 0, 0.0485734)
+            box-sizing: border-box
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.0379869)
+            border-radius: 2px
+            padding-left: 18px
+          &[type="submit"]
+            position: absolute
+            width: 20px
+            height: 20px
+            background-image: url(../img/Shape.png)
+            background-repeat: no-repeat
+            background-size: cover
+            color: transparent
+            background-color: transparent
+            border: none
+            right: 19px
+            bottom: 0
+            top: 0
+            margin: auto
+      .main-services-text
+        font-family: Source Sans Pro
+        font-style: normal
+        font-weight:  700
+        font-size: 14px
+        line-height: 14px
+        letter-spacing: 0.130667px
+        color: #3C52C9
+        span
+          display: inline-block
+          margin-left: 10px
+          color: rgba(0, 0, 0, 0.365093)
+    .button-add
+      width: 108px
+      height: 34px
+      background: #3D61FF
+      box-shadow: 0px 3px 7px rgba(61, 97, 255, 0.270211), inset 0px 1px 1px rgba(0, 0, 0, 0.110479)
+      border-radius: 4px
+      font-family: Source Sans Pro
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: normal
+      text-align: center
+      letter-spacing: 0.168px
+      text-transform: uppercase
+      border: none
+      color: #FFFFFF
+  .table
+    padding: 0 15px 15px
+    table
+      width: 100%
+      background-color: #fff
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.0379869)
+      border-radius: 5px
+      border: 0.5px solid rgba(0, 0, 0, 0.0485734)
+      box-sizing: border-box
+      thead
+        box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.0872962)
+        border-radius: 2px
+      tbody
+        tr
+          &:nth-of-type(even)
+            background-color: #FAFBFF
+      tr
+        display: flex
+        justify-content: space-between
+        td
+          min-width: 13%
+          font-family: Source Sans Pro
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: normal
+          text-align: center
+          color: rgba(0, 0, 0, 0.5)
+          padding: 20px
+          &:nth-of-type(1)
+            padding: 20px 50px
+            text-align: left
+          &:nth-of-type(2)
+            text-align: left
+          &:nth-of-type(3)
+            text-align: left
+          &:nth-of-type(4)
+            text-align: left
+          &:nth-of-type(5)
+            text-align: right
+          &:nth-of-type(6)
+            text-align: right
+          &:nth-of-type(7)
+            text-align: right
+        td.true
+          font-family: Source Sans Pro
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 14px
+          text-align: center
+          color: #86EE82
+          span
+            background: #86EE82
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            display: inline-block
+            margin-left: 15px
+        td.false
+          font-family: Source Sans Pro
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 14px
+          text-align: center
+          color: #FF5867
+          span
+            background: #FF5867
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            display: inline-block
+            margin-left: 15px
+      .more-cell
+        border: none
+        width: 25px
+        height: 25px
+        background-image: url(../img/more.png)
+        background-repeat: no-repeat
+        border-radius: 100%
+        background-size: cover
+        margin: 0 10px
+      .edit-cell
+        border: none
+        width: 25px
+        height: 25px
+        background-image: url(../img/primary.png)
+        background-repeat: no-repeat
+        border-radius: 100%
+        background-size: cover
+        margin: 0 10px
+
+
+
+
+
+
+
+
+
